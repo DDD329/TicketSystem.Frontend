@@ -10,7 +10,7 @@ import { HubConnectionBuilder } from '@microsoft/signalr';
 import TextBox from 'devextreme-react/text-box';
 import DateBox from 'devextreme-react/date-box';
 
-export default function Profile() {
+export default function NewTicket() {
   const ticketHubConnection = new HubConnectionBuilder()
   .withUrl('http://localhost:5245/hubs/ticket')
   .withAutomaticReconnect()
@@ -96,10 +96,3 @@ export default function Profile() {
     </React.Fragment>
   );
 }
-
-const colCountByScreen = {
-  xs: 1,
-  sm: 2,
-  md: 3,
-  lg: 4
-};
